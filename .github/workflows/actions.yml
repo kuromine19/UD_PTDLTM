@@ -51,7 +51,7 @@ jobs:
           
           git checkout -b data_log
 
-          git push origin data_log
+          git push -f origin data_log
 
         env:
           REPO_KEY: ${{secrets.GITHUB_TOKEN}}
