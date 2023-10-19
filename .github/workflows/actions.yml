@@ -48,10 +48,8 @@ jobs:
           git commit -am "GH ACTION Headlines $(date)"
           
           git checkout -b data_log
-
-          git config pull.ff only 
           
-          git pull origin data_log 
+          git pull origin data_log --rebase
 
           git push origin data_log
 
