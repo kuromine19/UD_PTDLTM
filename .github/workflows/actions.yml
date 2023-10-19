@@ -48,8 +48,10 @@ jobs:
           git commit -am "GH ACTION Headlines $(date)"
 
           git checkout -b data_log
+          
+          git pull origin data_log 
 
-          git push origin main:data_log
+          git push origin data_log
 
         env:
           REPO_KEY: ${{secrets.GITHUB_TOKEN}}
