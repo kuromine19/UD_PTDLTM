@@ -47,6 +47,8 @@ jobs:
 
           git commit -am "GH ACTION Headlines $(date)"
 
+          git brand data_log
+          
           git checkout -b data_log
 
           git push origin data_log
