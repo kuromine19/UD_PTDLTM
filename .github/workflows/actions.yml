@@ -47,11 +47,9 @@ jobs:
 
           git commit -am "GH ACTION Headlines $(date)"
 
-          git brand data_log
-          
           git checkout -b data_log
 
-          git push -f origin data_log
+          git push origin main:data_log
 
         env:
           REPO_KEY: ${{secrets.GITHUB_TOKEN}}
